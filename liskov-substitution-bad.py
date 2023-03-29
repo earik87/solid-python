@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 class RegisterCourse(ABC):
+    @abstractmethod
     def register(self, student_name):
         pass
 

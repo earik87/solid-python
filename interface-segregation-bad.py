@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
 
 class RegisterCourses(ABC):
+    @abstractmethod
     def RegisterIntroductionToComputerScience(self):
         pass
 
+    @abstractmethod
     def RegisterAdvancedAlgorithms(self):
         pass
 

@@ -1,11 +1,13 @@
 from abc import ABC, abstractmethod
 
 class RegisterCourse(ABC):
+    @abstractmethod
     def register(self, student_name):
         pass
 
 class RegisterCourseWithGithubAccount(ABC):
-    def register(self, student_name, github_account):
+    @abstractmethod
+    def register(self, github_account):
         pass
 
 class RegisterMath(RegisterCourse):
